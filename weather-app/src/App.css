@@ -68,3 +68,12 @@ h2 {
   font-size: 18px;
   text-transform: capitalize;
 }
+
+.value {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.value-skeleton {
+  width: 80%;
+}

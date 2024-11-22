@@ -57,7 +57,6 @@ export class WeatherService implements IWeatherService {
     }
 
     const data = await response.json();
-    console.log("shay", data);
     return this._convertResponseToWeatherObject(data);
   }
 
@@ -86,7 +85,6 @@ export class WeatherService implements IWeatherService {
       feelsLikeC:
         "feelslike_c" in current ? (current.feelslike_c as number) : NaN,
     };
-    console.log("shy", res);
     return res;
   }
 }
